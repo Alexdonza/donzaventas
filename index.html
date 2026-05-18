@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Donza Ventas y Servicios | RD</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700&display=swap" rel="stylesheet">
+    <!-- Font Awesome 6 (free icons) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <!-- HEADER / NAVBAR -->
+    <header class="header">
+        <div class="container header-container">
+            <div class="logo">
+                <h1><i class="fas fa-hand-sparkles"></i> Donza <span>Ventas & Servicios</span></h1>
+                <p class="slogan">Calidad y confianza en República Dominicana</p>
+            </div>
+            <div class="contact-info">
+                <a href="tel:+18099819147" class="btn-phone"><i class="fas fa-phone-alt"></i> 809-981-9147</a>
+                <span class="country"><i class="fas fa-map-marker-alt"></i> República Dominicana</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="container hero-content">
+            <h2>Expertos en soluciones para el hogar, industria y comercio</h2>
+            <p>Más de 100 oficios especializados + productos de calidad a tu alcance</p>
+            <a href="#contacto" class="btn-primary">Solicita presupuesto gratis</a>
+        </div>
+    </section>
+
+    <!-- CATEGORIA: SERVICIOS DESTACADOS (los primeros 5) -->
+    <section class="services-category">
+        <div class="container">
+            <div class="section-header">
+                <h2><i class="fas fa-tools"></i> Servicios destacados</h2>
+                <p>Los más solicitados por nuestros clientes</p>
+            </div>
+            <div class="cards-grid" id="featured-services">
+                <!-- JS dinámico -->
+            </div>
+        </div>
+    </section>
+
+    <!-- TODOS LOS SERVICIOS COMPLETOS (por categorías) -->
+    <section class="all-services">
+        <div class="container">
+            <div class="section-header">
+                <h2><i class="fas fa-clipboard-list"></i> Todos nuestros oficios y especialidades</h2>
+                <p>Más de 70 servicios profesionales en una sola plataforma</p>
+            </div>
+            <div class="services-accordion" id="services-container">
+                <!-- Aquí se genera dinámicamente con JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- PRODUCTOS -->
+    <section class="products-section">
+        <div class="container">
+            <div class="section-header">
+                <h2><i class="fas fa-boxes"></i> Productos destacados</h2>
+                <p>Materiales, insumos y equipos para tus proyectos</p>
+            </div>
+            <div class="products-grid" id="products-list">
+                <!-- Productos desde JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACTO / COTIZACION -->
+    <section id="contacto" class="contact">
+        <div class="container contact-flex">
+            <div class="contact-info-box">
+                <h3><i class="fas fa-headset"></i> ¿Necesitas ayuda?</h3>
+                <p>Contáctanos vía WhatsApp o llamada para coordinar tu servicio o compra de productos.</p>
+                <div class="contact-details">
+                    <p><i class="fas fa-phone"></i> <strong>Teléfono:</strong> <a href="tel:+18099819147">809-981-9147</a></p>
+                    <p><i class="fab fa-whatsapp"></i> <strong>WhatsApp:</strong> 809-981-9147</p>
+                    <p><i class="fas fa-globe"></i> <strong>Horario:</strong> Lun-Dom 8:00 am - 7:00 pm</p>
+                    <p><i class="fas fa-flag-checkered"></i> <strong>Oficina principal:</strong> Santo Domingo, R.D.</p>
+                </div>
+            </div>
+            <form class="contact-form" id="quoteForm">
+                <h3>Solicita cotización sin compromiso</h3>
+                <input type="text" placeholder="Tu nombre completo" required id="name">
+                <input type="tel" placeholder="Teléfono o WhatsApp" required id="phone">
+                <input type="email" placeholder="Correo electrónico (opcional)" id="email">
+                <select id="serviceInterest" required>
+                    <option value="">Selecciona un servicio o producto de interés</option>
+                    <option value="Fumigación">Fumigación</option>
+                    <option value="Herrería">Herrería</option>
+                    <option value="Limpieza de muebles">Limpieza de muebles</option>
+                    <option value="Instalaciones eléctricas">Instalaciones eléctricas</option>
+                    <option value="Albañil / Construcción">Albañil / Construcción</option>
+                    <option value="Plomería">Plomería</option>
+                    <option value="Productos Donza">Productos Donza</option>
+                </select>
+                <textarea rows="3" placeholder="Describe lo que necesitas (tipo de proyecto o producto)" id="message"></textarea>
+                <button type="submit" class="btn-primary">Enviar solicitud <i class="fas fa-paper-plane"></i></button>
+                <p class="small">Nos pondremos en contacto contigo en menos de 1 hora.</p>
+            </form>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <p>&copy; 2025 Donza Ventas y Servicios - República Dominicana. <i class="fas fa-certificate"></i> Profesionales verificados.</p>
+            <p class="footer-whats"><i class="fab fa-whatsapp"></i> Atención inmediata: 809-981-9147</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
